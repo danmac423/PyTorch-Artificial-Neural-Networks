@@ -1,13 +1,12 @@
 import pandas as pd
 import torch
 import joblib
-from model import LitPriceClassifier, PriceClassifier
+from model import PriceClassifier
 from sklearn.preprocessing import StandardScaler
 
 
 TEST_CSV = "test_dataset.csv"
 SCALER_PATH = "features_scaler.pkl"
-CHECKPOINT_PATH = "price-classification/trnphmyp/checkpoints/best-model.ckpt"
 OUPUT_CSV = "pred.csv"
 
 torch.serialization.add_safe_globals([PriceClassifier])
@@ -20,9 +19,6 @@ features_to_scale = scaler.feature_names_in_
 X[features_to_scale] = scaler.transform(X[features_to_scale])
 
 X_tensor = torch.tensor(X.to_numpy(), dtype=torch.float)
-
-model = LitPriceClassifier.load_from_checkpoint(CHECKPOINT_PATH)
-torch.save(model.classifier, "best.pt")
 
 model = torch.load("best.pt", weights_only=False)
 
