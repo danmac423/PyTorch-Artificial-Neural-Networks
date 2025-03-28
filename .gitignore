@@ -8,3 +8,8 @@ wheels/
 
 # Virtual environments
 .venv
+
+.DS_Store
+lightning_logs
+wandb
+price-classification
