@@ -13,3 +13,6 @@ wheels/
 lightning_logs
 wandb
 price-classification
+images-classification
+data/
+lab*/
