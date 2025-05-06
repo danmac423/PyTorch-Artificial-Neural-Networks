@@ -14,5 +14,7 @@ lightning_logs
 wandb
 price-classification
 images-classification
+trafic-signs-generation
 data/
 lab*/
+*.zip
