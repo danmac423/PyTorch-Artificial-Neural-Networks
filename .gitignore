@@ -18,3 +18,5 @@ trafic-signs-generation
 data/
 lab*/
 *.zip
+test_images
+generated_images
