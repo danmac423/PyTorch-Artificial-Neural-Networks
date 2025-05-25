@@ -20,3 +20,5 @@ lab*/
 *.zip
 test_images
 generated_images
+checkpoints
+choords-classification
