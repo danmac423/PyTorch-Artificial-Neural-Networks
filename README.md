@@ -56,6 +56,3 @@ uv sync
 * `pandas` & `numpy`
 * `scikit-learn`
 * `wandb` (Weights & Biases)
-
-## Author
-Projects completed as part of the SSNE university course.
