@@ -1,4 +1,4 @@
-# Artificial Neural Networks (SSNE) - University Projects
+# Artificial Neural Networks (SSNE)
 
 This repository contains a collection of projects completed during the **Artificial Neural Networks (SSNE)** course. The projects cover a wide spectrum of machine learning tasks, including regression, classification, computer vision (GANs, image recognition), sequence processing (RNNs), and Natural Language Processing (NLP).
 
